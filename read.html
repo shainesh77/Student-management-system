@@ -1,0 +1,19 @@
+<html>
+    <head>
+     <script src="./jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+             $("#read").click(function(){
+             $.post("/read",
+               function(result,status){
+                alert(result);
+               }
+              );
+             });
+            });
+        </script>
+    </head>
+    <body>
+        <button id="read">read</button>
+    </body>
+</html>
